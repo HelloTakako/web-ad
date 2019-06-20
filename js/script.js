@@ -17,11 +17,11 @@ const c2 = document.getElementById('c2');
 
 
 
-TweenMax.from(SVG1, 0.5, {
-    opacity:0,
-    scale:0,
-    ease:Bounce.easeOut
-});
+// TweenMax.from(SVG1, 0.5, {
+//     opacity:0,
+//     scale:0,
+//     ease:Bounce.easeOut
+// });
 
 
 var wrap = document.getElementsByClassName("wrapper");
@@ -46,3 +46,6 @@ function drag(e){
 }
 
 document.addEventListener("mousemove", m);
+
+// droppable
+droppableEvent.dropzone: c1;
