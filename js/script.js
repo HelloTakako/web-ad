@@ -1,8 +1,5 @@
-TweenMax.to(".logo", 2, {
-    left:300,
-    backgroundColor:"#f00",
-    padding:20,
-    borderColor:"red",
-    borderRadius:20,
-    transform:"rotate(40deg)"
+TweenMax.from(".logo", 0.5, {
+    opacity:0,
+    scale:0,
+    ease:Bounce.easeOut
 });
