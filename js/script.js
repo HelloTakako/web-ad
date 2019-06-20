@@ -49,4 +49,3 @@ function m(e){
 document.addEventListener("mousemove", m);
 
 // droppable
-droppableEvent.dropzone: c1;

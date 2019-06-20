@@ -3,6 +3,12 @@
   position: absolute;
 }
 
+#wrapper:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
 img {
   -webkit-user-select: none;
      -moz-user-select: none;
