@@ -3,6 +3,10 @@
   position: absolute;
 }
 
+#wrapper {
+  position: relative;
+}
+
 #wrapper:after {
   display: block;
   content: '';
@@ -16,8 +20,50 @@ img {
           user-select: none;
 }
 
-#svg1 {
-  fill: red;
+svg {
+  width: 500px;
+  height: 500px;
+}
+
+#Layer_1 .st0 {
+  fill: #E6EF65;
+}
+
+#Layer_1 .st1 {
+  fill: #FF7B7B;
+}
+
+#Layer_1 .st2 {
+  fill: #AF6EAA;
+}
+
+#Layer_1 .st3 {
+  fill: #D384CA;
+}
+
+#Layer_1 .st4 {
+  fill: #8C548E;
+}
+
+#Layer_1 .st5 {
+  opacity: 0.19;
+  fill: #9E9E9E;
+}
+
+#Layer_1 .st6 {
+  fill: #FFCACA;
+}
+
+#Layer_1 .st7 {
+  fill: #EDB9B9;
+}
+
+#Layer_1 .st8 {
+  fill: #FFFFFF;
+}
+
+#Layer_1 .st9 {
+  fill: #FF8015;
 }
 
 #circle {

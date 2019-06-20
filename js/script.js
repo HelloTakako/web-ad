@@ -34,7 +34,7 @@ function m(e){
         FLOWER3.style.top=e.pageY/100 + 40 + "px";
 }
 
-// var inner = document.getElementById('wrapper-inner');
+var inner = document.getElementById('wrapper-inner');
 // c2.addEventListener('mousedown', move);
 // function move(e){
 //     console.log(e);
