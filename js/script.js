@@ -33,17 +33,18 @@ function m(e){
         FLOWER3.style.right=e.pageX/100 + "px";
         FLOWER3.style.top=e.pageY/100 + 40 + "px";
 }
-var inner = document.getElementById('wrapper-inner');
-c2.addEventListener('mousedown', move);
-function move(e){
-    console.log(e);
-        c2.style.left = e.pageX;
-        c2.style.top = e.pageY;
-}
-function drag(e){
-    c2.style.left = e.pageX;
-    c2.style.top = e.pageY;
-}
+
+// var inner = document.getElementById('wrapper-inner');
+// c2.addEventListener('mousedown', move);
+// function move(e){
+//     console.log(e);
+//         c2.style.left = e.pageX;
+//         c2.style.top = e.pageY;
+// }
+// function drag(e){
+//     c2.style.left = e.pageX;
+//     c2.style.top = e.pageY;
+// }
 
 document.addEventListener("mousemove", m);
 
