@@ -1,0 +1,22 @@
+{
+  "name": "web-ad",
+  "version": "1.0.0",
+  "description": "https://hellotakako.github.io/web-ad/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelloTakako/web-ad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HelloTakako/web-ad/issues"
+  },
+  "homepage": "https://github.com/HelloTakako/web-ad#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
