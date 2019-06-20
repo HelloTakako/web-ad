@@ -6,4 +6,23 @@
 #svg1 {
   fill: red;
 }
+
+#img1 {
+  width: 300px;
+  position: absolute;
+}
+
+#img2 {
+  width: 600px;
+  position: absolute;
+  z-index: -1;
+}
+
+#img3 {
+  width: 400px;
+  right: 0;
+  top: 100px;
+  position: absolute;
+  z-index: -2;
+}
 /*# sourceMappingURL=style.css.map */
