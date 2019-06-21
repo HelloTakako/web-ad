@@ -1,6 +1,6 @@
 var element = React.createElement(
     "svg",
-    { id: "Layer_1", x: "0px", y: "0px", viewBox: "0 0 600 650" },
+    { id: "Layer_1", x: "0px", y: "0px", viewBox: "0 0 600 650", draggable: "true", ondragstart: "drag(event)" },
     React.createElement(
         "g",
         null,

@@ -25,13 +25,13 @@ const c2 = document.getElementById('c2');
 var wrap = document.getElementsByClassName("wrapper");
 function m(e){    
         FLOWER1.style.left=e.pageX/10 + 200+ "px";
-        FLOWER1.style.top=e.pageY/10  + "px";
+        FLOWER1.style.top=e.pageY/10 + 90 + "px";
         FLOWER2.style.left=e.pageX/50 + "px";
-        FLOWER2.style.top=e.pageY/50 + "px";
+        FLOWER2.style.top=e.pageY/50 + 90 + "px";
         FLOWER3.style.right=e.pageX/100 + "px";
-        FLOWER3.style.top=e.pageY/100 + 40 + "px";
+        FLOWER3.style.top=e.pageY/100 + 130 + "px";
         FLOWER4.style.right=e.pageX/30 + 300 + "px";
-        FLOWER4.style.top=e.pageY/30 + 100 + "px";
+        FLOWER4.style.top=e.pageY/30 + 190 + "px";
 }
 
 var inner = document.getElementById('wrapper-inner');

@@ -4,6 +4,7 @@
 }
 
 #wrapper {
+  top: 90px;
   position: relative;
   background: url("images/bg.jpg") no-repeat;
   height: auto;
@@ -22,10 +23,12 @@
 
 h1 {
   text-align: center;
-  font-size: 35px;
-  height: 50px;
+  font-size: 50px;
+  height: 70px;
+  padding-top: 20px;
   color: white;
   background-color: violet;
+  font-family: 'Libre Baskerville', serif;
 }
 
 img {
@@ -37,6 +40,8 @@ img {
 
 svg {
   width: 300px;
+  position: relative;
+  z-index: 10;
 }
 
 #Layer_1 .st0 {
@@ -80,11 +85,6 @@ svg {
   fill: #FF8015;
 }
 
-#circle {
-  position: relative;
-  z-index: 2;
-}
-
 #img1 {
   width: 200px;
   position: absolute;
@@ -125,7 +125,7 @@ svg {
 }
 
 #div1:after {
-  content: "DORAGON and drop here!";
+  content: "DRAGON -> drop here!";
   color: white;
   font-size: 25px;
   position: absolute;
@@ -144,14 +144,31 @@ svg {
   position: fixed;
   bottom: 20px;
   left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.store-icons:before {
+  content: "GET THE APP NOW!";
+  color: #6e1611;
+  font-weight: bold;
+  float: left;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: -30px;
 }
 
 .store-icons img {
   display: inline-block;
   width: 200px;
-}
-
-.store-icons img:nth-child(2) {
-  width: 300px;
 }
 /*# sourceMappingURL=style.css.map */

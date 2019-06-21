@@ -1,30 +1,35 @@
 .logo
-    width: 250px
-    position: absolute
+        width: 250px
+        position: absolute
 #wrapper
-    position: relative
-    background: url("images/bg.jpg") no-repeat
-    height: auto
-    width: 100%
-    height: 100%
-    max-height: 1020px
-    max-width: 1920px
-    overflow: hidden
+        top: 90px
+        position: relative
+        background: url("images/bg.jpg") no-repeat
+        height: auto
+        width: 100%
+        height: 100%
+        max-height: 1020px
+        max-width: 1920px
+        overflow: hidden
 #wrapper:after
-    display: block
-    content: ''
-    clear: both
+        display: block
+        content: ''
+        clear: both
 
 h1
         text-align: center
-        font-size: 35px
-        height: 50px
+        font-size: 50px
+        height: 70px
+        padding-top: 20px
         color: white
         background-color: violet
+        font-family: 'Libre Baskerville', serif
 img
     user-select: none
 svg
     width: 300px
+    position: relative
+    z-index: 10
 #Layer_1
 	.st0
         fill: #E6EF65
@@ -47,11 +52,6 @@ svg
         fill: #FFFFFF
 	.st9
         fill: #FF8015
-
-
-#circle
-    position: relative
-    z-index: 2
 
 #img1
     width: 200px
@@ -88,7 +88,7 @@ svg
         left: 600px
         border: 10px dashed white
 #div1:after
-        content: "DORAGON and drop here!"
+        content: "DRAGON -> drop here!"
         color: white
         font-size: 25px
         position: absolute
@@ -107,9 +107,20 @@ svg
         position: fixed
         bottom: 20px
         left: 20px
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        &:before
+                content: "GET THE APP NOW!"
+                color: #6e1611
+                font-weight: bold
+                float: left
+                display: inline-block
+                padding: 10px
+                border-radius: 10px
+                background-color: white
+                position: absolute
+                top: -30px
 .store-icons img
         display: inline-block
         width: 200px
-        &:nth-child(2)
-                width: 300px
-        

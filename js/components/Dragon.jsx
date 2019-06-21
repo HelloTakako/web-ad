@@ -1,5 +1,5 @@
 const element = (
-    <svg id="Layer_1" x="0px" y="0px" viewBox="0 0 600 650">
+    <svg id="Layer_1" x="0px" y="0px" viewBox="0 0 600 650" draggable="true" ondragstart="drag(event)">
 
     <g>
         <path className="st0" d="M514.2,488.3c0,0,1.9-30.3-11.5-31.1c0,0,2.3,22.8-8.2,30C483.9,494.6,510.5,499.4,514.2,488.3z"/>
