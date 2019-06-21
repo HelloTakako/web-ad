@@ -2,27 +2,9 @@ const FLOWER1=document.getElementById("img1");
 const FLOWER2=document.getElementById("img2");
 const FLOWER3=document.getElementById("img3");
 const FLOWER4=document.getElementById("img4");
-const circle = document.getElementsByClassName("circle");
-const c1 = document.getElementById('c1');
-const c2 = document.getElementById('c2');
-
-
-// TweenMax.from(c2, 0.5, {
-//     opacity:0,
-//     scale:0,
-//     ease:Bounce.easeOut
-// });
-
-
-
-// TweenMax.from(SVG1, 0.5, {
-//     opacity:0,
-//     scale:0,
-//     ease:Bounce.easeOut
-// });
-
-
 var wrap = document.getElementsByClassName("wrapper");
+var box = document.getElementById("div1");
+
 function m(e){    
         FLOWER1.style.left=e.pageX/10 + 200+ "px";
         FLOWER1.style.top=e.pageY/10 + 90 + "px";
@@ -34,9 +16,18 @@ function m(e){
         FLOWER4.style.top=e.pageY/30 + 190 + "px";
 }
 
-var inner = document.getElementById('wrapper-inner');
-
 document.addEventListener("mousemove", m);
+
+if (box.contains(dragon)) {
+        console.log(1);
+        flowerPop(); 
+}
+function flowerPop(){
+        TweenMax.to(FLOWER1, 0.5, {opacity:0,scale:0,ease:Bounce.easeOut});
+        TweenMax.to(FLOWER2, 1, {opacity:0,scale:0,ease:Bounce.easeOut});
+        TweenMax.to(FLOWER3, 2, {opacity:0,scale:0,ease:Bounce.easeOut});
+        TweenMax.to(FLOWER4, 1.5, {opacity:0,scale:0,ease:Bounce.easeOut});
+}
 
 //
 // drag and drop (https://www.w3schools.com/html/html5_draganddrop.asp)
@@ -53,4 +44,6 @@ function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
+  flowerPop();
+  
 }
