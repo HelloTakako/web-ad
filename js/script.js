@@ -1,7 +1,7 @@
-const FLOWER1=document.getElementById("img1");
-const FLOWER2=document.getElementById("img2");
-const FLOWER3=document.getElementById("img3");
-const FLOWER4=document.getElementById("img4");
+var FLOWER1=document.getElementById("img1");
+var FLOWER2=document.getElementById("img2");
+var FLOWER3=document.getElementById("img3");
+var FLOWER4=document.getElementById("img4");
 var wrap = document.getElementsByClassName("wrapper");
 var box = document.getElementById("div1");
 
@@ -44,6 +44,5 @@ function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
-  flowerPop();
-  
+  flowerPop();  
 }
