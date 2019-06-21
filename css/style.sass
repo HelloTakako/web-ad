@@ -3,16 +3,28 @@
     position: absolute
 #wrapper
     position: relative
-
+    background: url("images/bg.jpg") no-repeat
+    height: auto
+    width: 100%
+    height: 100%
+    max-height: 1020px
+    max-width: 1920px
+    overflow: hidden
 #wrapper:after
     display: block
     content: ''
     clear: both
+
+h1
+        text-align: center
+        font-size: 35px
+        height: 50px
+        color: white
+        background-color: violet
 img
     user-select: none
 svg
-    width: 500px
-    height: 500px
+    width: 300px
 #Layer_1
 	.st0
         fill: #E6EF65
@@ -42,17 +54,62 @@ svg
     z-index: 2
 
 #img1
-    width: 300px
+    width: 200px
     position: absolute
+    left: 200px
 
 #img2
-    width: 600px
+    width: 400px
     position: absolute
     z-index: -1
 
 #img3
-    width: 400px
+    width: 200px
     right: 0
     top: 100px
     position: absolute
     z-index: -2
+
+#img4
+    width: 300px
+    right: 300px
+    top: 100px
+    position: absolute
+    z-index: -2
+
+// area to drop dragon
+#div1
+        width: 300px
+        height: 300px
+        background-color: rgba(255,255,255,.5)
+        border-radius: 30px
+        position: absolute
+        top: 200px
+        left: 600px
+        border: 10px dashed white
+#div1:after
+        content: "DORAGON and drop here!"
+        color: white
+        font-size: 25px
+        position: absolute
+        top: -50px
+        backdround-color: white
+        display: block
+
+// background image
+.bg-img
+        width: 100%
+        position: absolute
+        z-index: -10
+
+// google play and App store icons
+.store-icons
+        position: fixed
+        bottom: 20px
+        left: 20px
+.store-icons img
+        display: inline-block
+        width: 200px
+        &:nth-child(2)
+                width: 300px
+        
