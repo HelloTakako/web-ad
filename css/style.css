@@ -11,7 +11,6 @@ body {
 #wrapper {
   top: 90px;
   position: relative;
-  background: url("images/bg.jpg") no-repeat;
   height: auto;
   width: 100%;
   height: 100%;
@@ -180,5 +179,64 @@ svg {
 .store-icons img {
   display: inline-block;
   width: 200px;
+}
+
+@media screen and (max-width: 475px) {
+  h1 {
+    font-size: 26px;
+    height: 40px;
+  }
+  svg {
+    width: 180px;
+  }
+  #div1 {
+    width: 180px;
+    height: 180px;
+    top: 40%;
+    left: 40%;
+  }
+  #div1:after {
+    font-size: 20px;
+  }
+  .store-icons:before {
+    top: -50px;
+  }
+  .store-icons img {
+    display: inline-block;
+    width: 150px;
+  }
+  .store-icons img[src="images/google-play.png"] {
+    width: 165px;
+    padding-left: 10px;
+  }
+  #img1 {
+    width: 100px;
+    left: 100px;
+    top: 50px;
+  }
+  #img2 {
+    width: 200px;
+    top: 300px;
+  }
+  #img3 {
+    width: 150px;
+    right: 0;
+    top: 100px;
+  }
+  #img4 {
+    width: 200px;
+    right: 10px;
+    top: 200px;
+  }
+  .bg-img {
+    height: 100%;
+    width: auto;
+  }
+  #wrapper-inner {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+  }
 }
 /*# sourceMappingURL=style.css.map */
