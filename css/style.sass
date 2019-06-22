@@ -1,3 +1,6 @@
+body
+        height: 100vh
+        overflow: hidden
 .logo
         width: 250px
         position: absolute
@@ -20,16 +23,24 @@ h1
         text-align: center
         font-size: 50px
         height: 70px
+        font-weight: bold
+        text-shadow: 1px 1px 0 maroon, 1px -1px 0 white, -1px 1px 0 white, -1px -1px 0 white
         padding-top: 20px
-        color: white
-        background-color: violet
+        color: violet
+        background: repeating-linear-gradient(white, pink 10%)
+        background: -webkit-repeating-linear-gradient(white, pink 10%)
         font-family: 'Libre Baskerville', serif
 img
-    user-select: none
+        -webkit-user-drag: none
+        -moz-user-drag: none
+        -o-user-drag: none
+        user-drag: none
 svg
-    width: 300px
-    position: relative
-    z-index: 10
+        width: 300px
+        position: relative
+        z-index: 10
+        top: 20px
+        left: 20px
 #Layer_1
 	.st0
         fill: #E6EF65

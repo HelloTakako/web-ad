@@ -4,6 +4,9 @@ var FLOWER3=document.getElementById("img3");
 var FLOWER4=document.getElementById("img4");
 var wrap = document.getElementsByClassName("wrapper");
 var box = document.getElementById("div1");
+var dragon = document.getElementById("dragon");
+var dragonChin = document.getElementById('moving-part');
+
 
 function m(e){    
         FLOWER1.style.left=e.pageX/10 + 200+ "px";
@@ -27,6 +30,7 @@ function flowerPop(){
         TweenMax.to(FLOWER2, 1, {opacity:0,scale:0,ease:Bounce.easeOut});
         TweenMax.to(FLOWER3, 2, {opacity:0,scale:0,ease:Bounce.easeOut});
         TweenMax.to(FLOWER4, 1.5, {opacity:0,scale:0,ease:Bounce.easeOut});
+        TweenMax.to(dragonChin, 0.2, {rotation:-15, transformOrigin: "right", ease:Power1.easeIn, repeat:3, yoyo:true});
 }
 
 //
